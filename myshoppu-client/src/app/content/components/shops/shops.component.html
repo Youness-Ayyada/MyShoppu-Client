@@ -1,0 +1,10 @@
+<div class="shops">
+    <mat-action-list>
+      <div *ngFor="let shop of (shops | async)">
+        <mat-divider></mat-divider>
+        <button mat-list-item (click)="navigate(shop.id);">
+          {{ shop.name }}
+        </button>
+      </div>
+    </mat-action-list>
+  </div>

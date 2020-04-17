@@ -1,0 +1,10 @@
+<div class="categories">
+    <mat-action-list>
+      <div *ngFor="let category of (categories | async)">
+        <mat-divider></mat-divider>
+        <button mat-list-item (click)="navigate(category.id);">
+          <span>{{ category.name }}</span>
+        </button>
+      </div>
+    </mat-action-list>
+  </div>

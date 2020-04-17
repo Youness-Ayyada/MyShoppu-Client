@@ -1,0 +1,12 @@
+.product {
+    width: 100px;
+    text-align: center;
+}
+
+.product-title {
+  font-size: 80%;
+}
+
+.product-actions {
+  text-align: right;
+}

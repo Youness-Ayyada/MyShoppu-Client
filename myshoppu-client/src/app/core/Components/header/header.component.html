@@ -1,0 +1,12 @@
+<div class="header">
+    <mat-toolbar color="primary" style="font-size: 100%;">
+      <input matInput type="search" size="15">
+      <button mat-button (click)="search()">
+        <mat-icon>search</mat-icon>
+      </button>
+      <span class="header-spacer"></span>
+      <button mat-button (click)="navigate()">
+        <mat-icon matBadge="{{ shoppingCartService.numberOfProducts }}" matBadgeColor="accent">shopping_cart</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
